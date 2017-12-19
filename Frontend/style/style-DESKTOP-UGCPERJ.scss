@@ -1,0 +1,744 @@
+// Fonts
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('../font/Raleway/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'RalewayLight';
+    src: url('../font/Raleway/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: 'RalewayThin';
+    src: url('../font/Raleway/Raleway-Thin.ttf');
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../font/Raleway/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../font/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../font/OpenSans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../font/OpenSans/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../font/OpenSans/OpenSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/FontAwesome/fontawesome-webfont.ttf');
+}
+
+// Variables
+$base-color: #ff8b38;
+$base-color-hover: #e84c3d;
+
+$text-color-header: #eaeaea;
+$white-color: #ffffff;
+$gray-light-color: #f5f5f5;
+$gray-color: #cacaca;
+$gray-middle-color: #e5e5e5;
+$black-text-color: #333333;
+$black-color: #131825;
+$back-color-header: $black-color;
+
+$base-font: 'OpenSansRegular';
+$base-font-light: 'OpenSansLight';
+$base-font-bold: 'OpenSansBold';
+$base-font-semibold: 'OpenSansSemibold';
+$add-font: 'RalewayRegular';
+$add-font-light: 'RalewayLight';
+$add-font-thin: 'RalewayThin';
+$add-font-bold: 'RalewayBold';
+$symbol-font: 'FontAwesome';
+
+
+.header {
+
+    .navbar {
+        min-height: 72px;
+        padding: 0px;
+        background-color: $back-color-header;
+        align-items: stretch;
+
+        .container {
+            align-items: stretch;
+
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                color: $white-color;
+                font-family: $base-font-bold;
+                font-size: 35px;
+                transition: 0.5s all;
+
+                span {
+                    font-family: $add-font-light;
+                    color: $base-color;
+                }
+
+                &:hover {
+                    color: $base-color;
+                    font-size: 40px;
+
+                    span {
+                        color: $white-color;
+                    }
+                }
+            }
+            .navbar-toggler {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 0px;
+                padding: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin: 0px;
+                background-color: $base-color;
+                color: $text-color-header;
+                transition: 0.5s all;
+
+                &:hover {
+                    background-color: $base-color-hover;
+                }
+                &:focus {
+                    background-color: $base-color-hover;
+                    border: 0px;
+                }
+            }
+            .navbar-collapse {
+                justify-content: flex-end;
+                align-items: stretch;
+
+                .navbar-nav {
+                    .nav-item {
+                        display: flex;
+
+                        .nav-link {
+                            display: flex;
+                            align-items: center;
+                            padding: 20px;
+                            color: $text-color-header;
+                            font-size: 14px;
+                            font-family: $base-font-semibold;
+                            transition: 0.5s all;
+
+                            &:hover {
+                                background-color: $text-color-header;
+                                color: $back-color-header;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    position: relative;
+
+    .section-first {
+        position: relative;
+        background-color: #9a9a9a;
+        background-image: url('../image/background.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+
+            .col-5 {
+                display: flex;
+                align-items: stretch;
+            }
+
+            .left {
+                color: $white-color;
+                //width: 70%;
+                padding-top: 40px;
+                padding-bottom: 60px;
+                padding-right: 50px;
+
+                .logo-title {
+                    color: $white-color;
+                    font-family: $base-font-bold;
+                    font-size: 70px;
+                    margin: 0px;
+                    padding-bottom: 20px;
+
+                    span {
+                        font-family: $add-font-light;
+                        color: $base-color;
+                    }
+
+                    &:hover {
+                        color: $base-color;
+    
+                        span {
+                            color: $white-color;
+                        }
+                    }
+                }
+                .title {
+                    font-family: $add-font-light;
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    padding-bottom: 40px;
+                    margin: 0px;
+                }
+                .devider {
+                    height: 2px;
+                    width: 200px;
+                    background-color: $white-color;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                }
+                .text {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    margin: 0px;
+                    font-family: $add-font-light;
+                    font-size: 14px;
+                }
+                .button {
+                    padding: 10px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    border: 1px solid $white-color;
+                    font-family: $base-font-semibold;
+                    cursor: pointer;
+                    transition: 0.5s all;
+
+                    &:hover {
+                        color: $base-color;
+                        border-color: $base-color;
+                    }
+                }
+            }
+            .right {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                #block-registration {
+                    display: none;
+                }
+
+                #block-login {
+                    display: none;
+                }
+
+                #block-profile {
+                    display: none;
+                    font-family: $base-font;
+                    min-width: 250px;
+                    text-align: center;
+
+                    .title {
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: $gray-middle-color;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .icon {
+                        width: 150px;
+                    }
+
+                    .line {
+                        display: flex;
+                        padding: 15px;
+
+                        p {
+                            margin: 0px;
+                        }
+
+                        .name {
+                            font-family: $base-font-semibold;
+                        }
+
+                        .value {
+                            margin-left: 15px;
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .block {
+                    background-color: $white-color;
+
+                    .title {
+                        background-color: $gray-light-color;
+                        color: $black-text-color;
+                        font-family: $base-font-bold;
+                        font-size: 20px;
+                        text-align: center;
+                        padding: 20px;
+                        display: block;
+                        margin-bottom: 15px;
+
+                        span {
+                            color: $base-color;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .form {
+                        margin: 0px;
+                        font-family: $base-font;
+
+                        .form-group {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            margin: 0px;
+
+                            .field {
+                                position: relative;
+    
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    height: 1px;
+                                    width: 100%;
+                                    margin-top: -10px;
+                                    background-color: $gray-color;
+                                }
+                            }
+                        }
+
+                        input {
+                            border: 0px;
+                            width: 100%;
+                            padding: 15px; 
+                        }
+                        input[type="email"], input[type="password"] {
+                            position: relative;
+                        }
+                        input[type="submit"] {
+                            background-color: $base-color;
+                            font-family: $base-font-semibold;
+                            margin-top: 15px;
+                            transition: 0.5s all;
+
+                            &:hover {
+                                background-color: $base-color-hover;
+                                color: $white-color;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .hint {
+                            margin-top: 15px;
+                            text-align: center;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-days-week {
+        background-color: $white-color;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+        margin-bottom: 3px;
+        
+        .blocks {
+            display: flex;
+
+            .day-block {
+                display: flex;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                flex-direction: column;
+                align-items: center;
+                width: 200px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 1px;
+                    height: 80%;
+                    position: absolute;
+                    right: -0.5px;
+                    background-color: $gray-middle-color;
+                }
+
+                &:last-child {
+                    &::before {
+                        content: none;
+                    }
+                }
+
+                &:hover {
+                    background-color: $gray-light-color;
+                    cursor: pointer;
+                }
+
+                .day-week {
+                    font-family: $base-font-bold;
+                }
+                .number {
+                    font-family: $add-font-thin;
+                    font-size: 60px;
+                }
+                .month {
+                    font-family: $add-font-light;
+                }
+            }
+
+            .day-active {
+                background-color: $black-color;
+                color: $gray-light-color;
+
+                &::before {
+                    content: none;
+                }
+
+                &:hover {
+                    background-color: $black-color;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+    .section-queues {
+        background-color: $gray-light-color;
+        padding: 50px;
+
+        .blocks {
+            background-color: $white-color;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+            margin-bottom: 40px;
+
+            .day-block {
+                //box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+                //margin: 10px;
+                
+                .block {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    position: relative;
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 1px;
+                        top: 50%;
+                        width: 100%;
+                        background-color: $gray-middle-color;
+                        z-index: 0;
+                    }
+
+                    .day-week, .number, .month {
+                        background-color: $white-color;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        font-family: $base-font-bold;
+                        z-index: 1;
+                    }
+
+                    .day-week {
+                        
+                    }
+
+                    .number {
+                        font-family: $add-font-light;
+                        font-size: 30px;
+                        color: $base-color;
+                        padding: 0px;
+                    }
+
+                    .month {
+                        
+                    }
+                } 
+            }
+
+            .queue-block {
+
+                &:nth-child(2n) {
+                    //background-color: $gray-light-color;
+                }
+
+                & + .list-queue {
+                    display: none;
+
+                    .title, .item {
+                        padding: 15px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        border-top: 1px solid $gray-middle-color;
+
+                        .number, .email, .time-join, .profile  {
+                            width: 200px;
+                            font-family: $base-font-semibold;
+                            text-align: center;
+                        }
+                    }
+                    .item {
+
+                        .number {
+                            font-family: $add-font;
+                        }
+                        .time-join {
+                            font-family: $add-font;
+                        }
+                        .email {
+                            font-family: $base-font;
+                        }
+                        .profile {
+                            background-color: $base-color;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            color: $white-color;
+
+                            &:hover {
+                                background-color: $base-color-hover;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .block {
+                    position: relative;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    box-shadow: 0 -1px 0 $gray-middle-color;
+                    position: relative;
+
+                    &::before, &::after {
+                        content: "";
+                        position: absolute;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        height: 100%;
+                        width: 100px;
+                        background-image: url('../image/queue-background/white-transparent.png');
+                        background-repeat: repeat-y;
+                        background-size: 100%;
+                        top: 0px;
+                        font-family: $symbol-font;
+                        font-size: 20px;
+                        transition: 0.5s all;
+                    }
+
+                    &::before {
+                        background-position: right;
+                        left: -100px;
+                    }
+
+                    &::after {
+                        background-position: left;
+                        right: -100px;
+                        transform: rotate(180deg);
+                        z-index: 2;
+                    }
+
+                    .name {
+                        font-family: $add-font-thin;
+                        font-size: 40px;
+                    }
+    
+                    .union {
+                        display: flex;
+                        align-items: center;
+    
+                        .event {
+                            font-family: $base-font-semibold;
+                            font-size: 15px;
+                            margin-right: 20px;
+                        }
+        
+                        .organization {
+                            font-family: $base-font;
+                            font-size: 15px;
+                        }
+                    }
+    
+                    .description {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+    
+                    $temp-height: 40px;
+                    .join {
+                        position: absolute;
+                        right: 0px;
+                        top: 50%;
+                        margin-top: -$temp-height / 2;
+                        width: 150px;
+                        height: $temp-height;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $base-color;
+                        color: $white-color;
+                        font-family: $base-font-semibold;
+
+                        &:hover {
+                            background-color: $base-color-hover;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .event-football, .event-concert, .event-cybersport, .event-conference {
+                position: relative;
+                display: flex;
+
+                &:hover {
+                    &::before {
+                        margin-right: 50px;    
+                    }
+                    &::after {
+                        margin-left: 50px;
+                    }
+
+                    .block {
+                        &::before {
+                            content: "\f078";
+                            left: -150px;    
+                        }
+                        &::after {
+                            content: "\f077";
+                            right: -150px;    
+                        }
+                    }
+                }
+
+                &::before, &::after {
+                    content: "";
+                    position: relative;
+                    width: 100%;
+                    background-color: $base-color-hover;
+                    background-size: cover;
+                    //background-attachment: fixed;
+                    background-position: center;
+                    flex-shrink: 5;
+                    transition: 0.5s all;
+                }
+
+                &::before {
+                    left: 0px;
+                }
+
+                &::after {
+                    right: 0px;
+                }
+            }
+
+            .event-football {
+                &::before, &::after {
+                    background-image: url('../image/queue-background/football.jpg');
+                }
+            }
+            .event-concert {
+                &::before, &::after {
+                    background-image: url('../image/queue-background/concert.png');
+                }
+            }
+            .event-cybersport {
+                &::before, &::after {
+                    background-image: url('../image/queue-background/cybersport.jpg');
+                }
+            }
+
+            .event-conference {
+                &::before, &::after {
+                    background-image: url('../image/queue-background/conference.jpg');
+                }
+            }
+        }
+    }
+}
+
+.main-profile {
+    position: relative;
+    background-color: $gray-light-color;
+    z-index: -1;
+
+    .section-first {
+        background-image: url('../image/background-blur.png');
+        background-size: cover;
+        background-attachment: fixed;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+
+        h1 {
+            padding: 40px;
+            margin: 0px;
+            color: $white-color;
+            text-align: center;
+        }
+    }
+
+    .section-blocks {
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: wrap;
+            padding-top: 25px;
+        }
+    
+        .block {
+            width: 350px;
+            height: 350px;
+            background-color: $white-color;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+            margin-bottom: 25px;
+        }
+
+        .profile {
+            .title {
+                background-color: $base-color;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: $white-color;
+                font-family: $base-font;
+                text-align: center;
+            }
+        }
+    } 
+}
+
+.margin-1920 {
+    height: 1920px;
+}
+
+@media (min-width: 768px) {
+
+    .header {
+        .navbar {
+            .container {
+                .navbar-toggler {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}

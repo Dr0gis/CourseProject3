@@ -1,0 +1,852 @@
+<head>
+    <meta charset="utf-8">
+    <title>Electronic Queue</title>
+    <link rel="import" href="header.html">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--My Styles-->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="section-first">
+            <div class="container">
+                <div class="col-7">
+                    <div class="left">
+                        <p class="logo-title">El<span>Queue</span></p>
+                        <p class="title">Electronic Queue - the best uniqe resource</p>
+                        <div class="devider"></div>
+                        <p class="text">This text for discription this resources and simple mnogabukaf + adv for android application</p>
+                        <a class="button">Download</a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="right">
+                        <div class="block" id="block-registration">
+                            <p class="title">Register for <span>use</span> application</p>
+                            <form class="form" id="registration-form">
+                                <div class="form-group">
+                                    <div class="field">
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group field">
+                                    <div class="field">
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="hint">Already exist account? <a href="#">Login</a></div>
+                                <input type="submit" value="Register">
+                            </form>
+                        </div>
+                        <div class="block" id="block-login">
+                            <p class="title">Login for <span>use</span> application</p>
+                            <form class="form" id="login-form">
+                                <div class="form-group">
+                                    <div class="field">
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group field">
+                                    <div class="field">
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="hint">Dosen't exist account yet? <a href="#">Registration</a></div>
+                                <input type="submit" value="Login">
+                            </form>
+                        </div>
+                        <div class="block" id="block-profile">
+                            <a href="profile.html" class="title"><span>Profile</span></a>
+                            <img class="icon" src="image/profile/icon-profile.jpg">
+                            <div class="line">
+                                <p class="name">Login: </p><p class="value" id="login"></p>
+                            </div>
+                            <form class="form">
+                                <input type="submit" value="Logout">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-days-week">
+            <div class="container">
+                <div class="blocks">
+                    <div class="day-block">
+                        <div class="day-week">Monday</div>
+                        <div class="number">01</div>
+                        <div class="month">January</div>
+                    </div>
+                    <div class="day-block">
+                        <div class="day-week">Tuesday</div>
+                        <div class="number">02</div>
+                        <div class="month">January</div>
+                    </div>
+                    <div class="day-block">
+                        <div class="day-week">Wednesday</div>
+                        <div class="number">03</div>
+                        <div class="month">January</div>
+                    </div>
+                    <div class="day-block day-active">
+                        <div class="day-week">Thursday</div>
+                        <div class="number">04</div>
+                        <div class="month">January</div>
+                    </div>
+                    <div class="day-block">
+                        <div class="day-week">Friday</div>
+                        <div class="number">05</div>
+                        <div class="month">January</div>
+                    </div>
+                    <div class="day-block">
+                        <div class="day-week">Saturday</div>
+                        <div class="number">06</div>
+                        <div class="month">January</div>
+                    </div>
+                    <div class="day-block">
+                        <div class="day-week">Sunday</div>
+                        <div class="number">07</div>
+                        <div class="month">January</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-queues">
+
+            <div class="blocks">
+                <div class="day-block">
+                    <div class="container">
+                        <div class="block">
+                            <div class="day-week">Friday</div>
+                            <div class="number">05</div>
+                            <div class="month">January</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-football" id="queue1">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-concert" id="queue2">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-cybersport" id="queue3">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-conference" id="queue4">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="blocks">
+                <div class="day-block">
+                    <div class="container">
+                        <div class="block">
+                            <div class="day-week">Friday</div>
+                            <div class="number">05</div>
+                            <div class="month">January</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-football" id="queue5">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-concert" id="queue6">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-cybersport" id="queue7">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-block event-conference" id="queue8">
+                    <div class="container">
+                        <div class="block">
+                            <div class="name">Name</div>
+                            <div class="union">
+                                <div class="event">Event</div>
+                                <div class="organization">Organization</div>
+                            </div>
+                            <div class="description">Description description description description description description</div>
+                            <div class="join">Join</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-queue">
+                    <div class="container">
+                        <div class="title">
+                            <div class="number">Number</div>
+                            <div class="email">Email</div>
+                            <div class="time-join">Join time</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">1</div>
+                            <div class="email">User 1</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">2</div>
+                            <div class="email">User 2</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">3</div>
+                            <div class="email">User 3</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">4</div>
+                            <div class="email">User 4</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">5</div>
+                            <div class="email">User 5</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">6</div>
+                            <div class="email">User 6</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">7</div>
+                            <div class="email">User 7</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="email">User 8</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">9</div>
+                            <div class="email">User 9</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">10</div>
+                            <div class="email">User 10</div>
+                            <div class="time-join">04.01.2018 12:53</div>
+                            <div class="profile">Profile</div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+
+        <div class="modals-profile">
+            <div class="join-modal background">
+                <div class="content">
+                    <div class="title">RFID Card</div>
+                    <div class="data">
+                        <div class="form-group">
+                            <div class="field">
+                                <input class="card" type="text" placeholder="Number Card" form="createOrganization" required minlength="3" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="joinToQueue button">Join</div>
+                </div>
+                <div class="close"></div>
+            </div>
+        </div>
+
+        <div class="margin-1920"></div>
+
+    </div>
+
+    <script>
+        var link = document.querySelector('link[rel=import]');
+        var header = link.import.querySelector('.header');
+        document.body.insertBefore(header.cloneNode(true), document.body.firstChild);
+    </script>
+
+    <!--Bootsrap + Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--My Scripts-->
+    <script src="script/variables.js"></script>
+
+    <script src="script/check-auth.js"></script>
+    <script src="script/login-registration.js"></script>
+    <script src="script/queues.js"></script>
+
+    <script src="script/ui-login-registration.js"></script>
+    <script src="script/ui-queues.js"></script>
+    
+    <script src="script/script.js"></script>
+</body>

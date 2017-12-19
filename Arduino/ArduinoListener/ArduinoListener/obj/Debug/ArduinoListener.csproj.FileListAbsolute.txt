@@ -1,0 +1,14 @@
+C:\Users\Nikita\Documents\Visual Studio 2017\Projects\ArduinoListener\ArduinoListener\bin\Debug\ArduinoListener.exe.config
+C:\Users\Nikita\Documents\Visual Studio 2017\Projects\ArduinoListener\ArduinoListener\bin\Debug\ArduinoListener.exe
+C:\Users\Nikita\Documents\Visual Studio 2017\Projects\ArduinoListener\ArduinoListener\bin\Debug\ArduinoListener.pdb
+C:\Users\Nikita\Documents\Visual Studio 2017\Projects\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.csprojResolveAssemblyReference.cache
+C:\Users\Nikita\Documents\Visual Studio 2017\Projects\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\Documents\Visual Studio 2017\Projects\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.exe
+C:\Users\Nikita\Documents\Visual Studio 2017\Projects\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.pdb
+C:\Users\dr0gi\OneDrive\Course\Arduino\ArduinoListener\ArduinoListener\bin\Debug\ArduinoListener.exe.config
+C:\Users\dr0gi\OneDrive\Course\Arduino\ArduinoListener\ArduinoListener\bin\Debug\ArduinoListener.exe
+C:\Users\dr0gi\OneDrive\Course\Arduino\ArduinoListener\ArduinoListener\bin\Debug\ArduinoListener.pdb
+C:\Users\dr0gi\OneDrive\Course\Arduino\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.csprojResolveAssemblyReference.cache
+C:\Users\dr0gi\OneDrive\Course\Arduino\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.csproj.CoreCompileInputs.cache
+C:\Users\dr0gi\OneDrive\Course\Arduino\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.exe
+C:\Users\dr0gi\OneDrive\Course\Arduino\ArduinoListener\ArduinoListener\obj\Debug\ArduinoListener.pdb

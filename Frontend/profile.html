@@ -1,0 +1,238 @@
+<head>
+    <meta charset="utf-8">
+    <title>Electronic Queue</title>
+    <link rel="import" href="header.html">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--My Styles-->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="main-profile">
+
+        <div class="section-first">
+            <div class="container">
+                <h1> Profile </h1>
+            </div>
+        </div>
+        <div class="section-blocks">
+            <div class="container">
+                <div class="profile block" id="block-profile">
+                    <div class="title">Profile</div>
+                    <img class="icon" src="image/profile/icon-profile.jpg">
+                    <div class="lines">
+                        <div class="line">
+                            <p class="name">Login: </p>
+                            <p class="value" id="login"></p>
+                        </div>
+                        <div class="line status">
+                            <p class="name">Status: </p>
+                            <p class="value"></p>
+                        </div>
+                    </div>
+                    <a id="become-admin" class="button"> Become an administrator </a>
+                </div>
+                <div class="organization block">
+                    <div class="title">Organization</div>
+                    <div class="current">
+                        <div class="title">Name Organization</div>
+                        <div class="description">Example example example example example example example</div>
+                        <div class="line">
+                            <div class="edit button">Edit</div>
+                            <div class="leave button">Leave</div>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <div class="title">Name Organization</div>
+                                <div class="join button">Join</div>
+                            </div>
+                        </div>
+                        <div class="create button">Create</div>
+                    </div>
+                </div>
+                <div class="event-organization block">
+                    <div class="title">Events at the organization</div>
+                    <div class="other">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <div class="title">Event</div>
+                                <div class="line">
+                                    <div class="remove button">Remove</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add button">Add</div>
+                    </div>
+                </div>
+                <div class="queue-organization block">
+                    <div class="title">Queues at the organization</div>
+                    <div class="other">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <div class="title">Queue</div>
+                                <div class="line">
+                                    <div class="remove button">Edit</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add button">Add</div>
+                    </div>
+                </div>
+                <div class="queue-current block">
+                    <div class="title">Current Queues</div>
+                    <div class="other">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <div class="title">Queue</div>
+                                <div class="line">
+                                    <div class="remove button">Edit</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add button">Add</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="modals-profile">
+        <div class="organization-modal background">
+            <div class="content">
+                <div class="title">Organization</div>
+                <div class="data">
+                    <div class="form-group">
+                        <div class="field">
+                            <input class="name" type="text" placeholder="Name" form="createOrganization" required minlength="3" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <input class="description" type="text" placeholder="Discription" form="createOrganization" required minlength="3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="create button">Create</div>
+            </div>
+            <div class="close"></div>
+        </div>
+        <div class="event-modal background">
+            <div class="content">
+                <div class="title">Event</div>
+                <div class="data">
+                    <div class="form-group">
+                        <div class="field">
+                            <input class="name" type="text" placeholder="Name" form="createOrganization" required minlength="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <input class="description" type="text" placeholder="Discription" form="createOrganization" required minlength="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <select class="type" type="text" placeholder="Discription" form="createOrganization">
+                                <option selected disabled>Type</option>
+                                <option>Concert</option>
+                                <option>Conference</option>
+                                <option>Cybersport</option>
+                                <option>Football</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="add button">Add</div>
+            </div>
+            <div class="close"></div>
+        </div>
+        <div class="queue-organization-modal background">
+            <div class="content">
+                <div class="title">Queue at the event</div>
+                <div class="data">
+                    <div class="form-group">
+                        <div class="field">
+                            <input class="name" type="text" placeholder="Name" form="createOrganization" required minlength="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <input class="description" type="text" placeholder="Discription" form="createOrganization" required minlength="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <select class="event" type="text" placeholder="Discription" form="createOrganization">
+                                <option selected disabled>Event</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="add button">Add</div>
+            </div>
+            <div class="close"></div>
+        </div>
+        <div class="cards-queue-modal background">
+            <div class="content">
+                <div class="title">Cards</div>
+                <div class="data">
+                    <table class="list">
+                        <tr class="item">
+                            <th> Number </th>
+                            <th> Uid </th>
+                            <th> Edit </th>
+                        </tr>
+                        <tr class="item">
+                            <td class="number">1</td>
+                            <td class="uid">62 4C B5 89</td>
+                            <td class="edit">Edit</td>
+                        </tr>
+                    </table>
+                    <div class="add-data">
+                        <div class="form-group">
+                            <div class="field">
+                                <input class="uid" type="text" placeholder="Uid" form="createOrganization" required minlength="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add button">Add</div>
+            </div>
+            <div class="close"></div>
+        </div>
+    </div>
+
+    <script>
+        var link = document.querySelector('link[rel=import]');
+        var header = link.import.querySelector('.header');
+        document.body.insertBefore(header.cloneNode(true), document.body.firstChild);
+    </script>
+
+    <!--Bootsrap + Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--My Scripts-->
+    <script src="script/variables.js"></script>
+
+    <script src="script/check-auth.js"></script>
+    <script src="script/profile-buttons.js"></script>
+
+    <script src="script/script-profile.js"></script>
+</body>
